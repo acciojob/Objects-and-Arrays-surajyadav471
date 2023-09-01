@@ -5,20 +5,10 @@ const person = {
   age: 80,
 };
 
-const team = players;
-
-const team1 = [];
-for(let i = 0; i < players.length; i++){
-	team1.push(players[i]);
-}
-
-const cap1 = {};
-let keys = Object.keys(person);
-keys.forEach((key) => {
-	cap1.key = person.key;
-});
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
-
+var team=players;
+var team1=players.slice();
+var cap1=Object.assign({},person);
 window.players = players;
 window.person = person;
 window.team = team;
